@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @license http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author Phuong LE <sony@menincode.com> <@>
+ * @copyright Copyright (c) 2019 Menincode (http://www.menincode.com)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Easygento_InstanceReminder" setup_version="1.0.0">
+        <sequence>
+            <module name="Easygento_Core"/>
+        </sequence>
+    </module>
+</config>

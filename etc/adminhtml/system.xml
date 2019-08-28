@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @license http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author Phuong LE <sony@menincode.com> <@>
+ * @copyright Copyright (c) 2019 Menincode (http://www.menincode.com)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+<system>
+    <section id="easygento_instancereminder" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+        <label>Instance Reminder</label>
+        <tab>easygento_core</tab>
+        <resource>Easygento_InstanceReminder::instancereminder</resource>
+        <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>General</label>
+            <field id="enabled" type="select" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Enabled</label>
+                <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+            </field>
+            <field id="instance_type" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Instance</label>
+                <source_model>Easygento\InstanceReminder\Model\Config\Source\Instance</source_model>
+                <depends>
+                    <field id="enabled">1</field>
+                </depends>
+            </field>
+            <field id="custom_instance" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Custom</label>
+                <depends>
+                    <field id="enabled">1</field>
+                    <field id="instance_type">custom</field>
+                </depends>
+                <frontend_model>\Easygento\InstanceReminder\Block\ColorPicker</frontend_model>
+            </field>
+            <field id="dev" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Dev</label>
+                <depends>
+                    <field id="enabled">1</field>
+                    <field id="instance_type">develop</field>
+                </depends>
+                <frontend_model>\Easygento\InstanceReminder\Block\ColorPicker</frontend_model>
+            </field>
+            <field id="preprod" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Preprod</label>
+                <depends>
+                    <field id="enabled">1</field>
+                    <field id="instance_type">preprod</field>
+                </depends>
+                <frontend_model>\Easygento\InstanceReminder\Block\ColorPicker</frontend_model>
+            </field>
+            <field id="production" translate="label" type="text" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Production</label>
+                <depends>
+                    <field id="enabled">1</field>
+                    <field id="instance_type">production</field>
+                </depends>
+                <frontend_model>\Easygento\InstanceReminder\Block\ColorPicker</frontend_model>
+            </field>
+        </group>
+    </section>
+</system>
+</config>
