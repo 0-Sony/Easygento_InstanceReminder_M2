@@ -1,0 +1,11 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Easygento_InstanceReminder::css/style.css"/>
+    </head>
+    <body>
+        <referenceContainer name="global.notices">
+            <block name="easygento.instancereminder" template="Easygento_InstanceReminder::ribbon.phtml" ifconfig="easygento_instancereminder/general/enabled"/>
+        </referenceContainer>
+    </body>
+</page>
+

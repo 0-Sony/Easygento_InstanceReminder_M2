@@ -1,0 +1,34 @@
+#easygento_ribbon {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    top: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    z-index: 101;
+}
+#easygento_ribbon._fixed{
+    height: 20px;
+    left: 8.800000000000001rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 600;
+}
+#easygento_ribbon span {
+    margin-left: -145px;
+    color : #FFFFFF;
+    mix-blend-mode: difference;
+}
+
+#easygento_ribbon._fixed span {
+    margin-left: -145px;
+    color: #FFFFFF;
+    mix-blend-mode: difference;
+    line-height: 1;
+    display: block;
+    padding-top: 5px;
+}
+
+

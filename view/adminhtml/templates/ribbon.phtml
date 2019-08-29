@@ -1,0 +1,25 @@
+<?php
+/**
+ * @license MIT. Please see the LICENSE file for more info.
+ * @author Phuong LE <sony@menincode.com>
+ * @copyright Copyright (c) 2019 Men In Code Ltd (http://www.menincode.com)
+ */
+?>
+<?php $helper = $this->helper('\Easygento\InstanceReminder\Helper\Config') ?>
+<div id="easygento_ribbon" style="background-color: <?php echo $helper->getColorByInstance() ?>">
+    <span><?php echo $helper->getInstanceName() ?></span>
+</div>
+
+<script type="text/x-magento-init">
+        {
+            "#easygento_ribbon": {
+                "Magento_Ui/js/core/app" : {
+                    "components": {
+                       "InstanceReminder" :{
+                           "component" :"Easygento_InstanceReminder/js/ribbon"
+                       }
+                    }
+                }
+            }
+        }
+</script>
