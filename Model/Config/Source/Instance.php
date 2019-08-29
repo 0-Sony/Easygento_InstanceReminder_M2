@@ -1,8 +1,8 @@
 <?php
 /**
- * @license http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
- * @author Phuong LE <sony@menincode.com> <@>
- * @copyright Copyright (c) 2019 Menincode (http://www.menincode.com)
+ * @license MIT. Please see the LICENSE file for more info.
+ * @author Phuong LE <sony@menincode.com>
+ * @copyright Copyright (c) 2019 Men In Code Ltd (http://www.menincode.com)
  */
 
 namespace Easygento\InstanceReminder\Model\Config\Source;
