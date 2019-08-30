@@ -3,13 +3,14 @@
 Sometimes you have to work on multiple instance on multiple tab on your browser. 
 This module prevent you to mix up by mistake your instances.
 
-There are 4 instances type :
+There are 4 instance types :
 * Develop
 * Pre Production
 * Production
 * Custom (you can named it as you want)
 
-You have to define colour for your current instance, and a top bar with your background colour will appear
+You have to define the colour for your current instance.
+After set all that you need an indicator top bar will appears.
 
 
 ### How to Install ?
