@@ -5,12 +5,20 @@
  * @copyright Copyright (c) 2019 Men In Code Ltd (http://www.menincode.com)
  */
 ?>
-<?php $helper = $this->helper('\Easygento\InstanceReminder\Helper\Config') ?>
-<div id="easygento_ribbon" style="background-color: <?php echo $helper->getColorByInstance() ?>">
-    <span><?php echo $helper->getInstanceName() ?></span>
-</div>
+<?php
+/** @var $block \Magento\Framework\View\Element\Template */
+/** @var $helper \Easygento\InstanceReminder\Helper\Config */
+$helper = $this->helper('\Easygento\InstanceReminder\Helper\Config')
+?>
 
-<script type="text/x-magento-init">
+<?php if ($helper->isEnabled()) : ?>
+    <div id="easygento_ribbon" style="background-color: <?php echo $helper->getColorByInstance() ?>">
+        <div class="logo">
+            <span><?php echo $helper->getInstanceName() ?></span>
+        </div>
+    </div>
+
+    <script type="text/x-magento-init">
         {
             "#easygento_ribbon": {
                 "Magento_Ui/js/core/app" : {
@@ -22,4 +30,7 @@
                 }
             }
         }
-</script>
+
+    </script>
+<?php endif; ?>
+

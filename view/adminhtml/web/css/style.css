@@ -9,7 +9,7 @@
     z-index: 101;
 }
 #easygento_ribbon._fixed{
-    height: 20px;
+    height: 15px;
     left: 8.800000000000001rem;
     position: fixed;
     right: 0;
@@ -17,7 +17,6 @@
     z-index: 600;
 }
 #easygento_ribbon span {
-    margin-left: -145px;
     color : #FFFFFF;
     mix-blend-mode: difference;
 }
@@ -25,10 +24,27 @@
 #easygento_ribbon._fixed span {
     margin-left: -145px;
     color: #FFFFFF;
-    mix-blend-mode: difference;
+    mix-blend-mode: exclusion;
     line-height: 1;
     display: block;
-    padding-top: 5px;
+    padding-top: 1px;
 }
+
+#easygento_ribbon .logo {
+    background: url(../images/easygento_logo_nb.jpg) no-repeat;
+    background-size: 51px;
+}
+
+#easygento_ribbon._fixed .logo {
+    background: url(../images/easygento_logo_nb.jpg) no-repeat;
+    background-size: 28px;
+    height: 15px;
+}
+
+.login-footer #easygento_ribbon {
+    margin-top:10px;
+}
+
+
 
 

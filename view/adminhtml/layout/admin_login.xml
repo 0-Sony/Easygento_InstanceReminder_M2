@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @license MIT. Please see the LICENSE file for more info.
+ * @author Phuong LE <sony@menincode.com>
+ * @copyright Copyright (c) 2019 Men In Code Ltd (http://www.menincode.com)
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-login" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="login.footer">
+            <block name="easygento.instancereminder" template="Easygento_InstanceReminder::ribbon.phtml" ifconfig="easygento_instancereminder/general/display_admin_login"/>
+        </referenceContainer>
+    </body>
+</page>

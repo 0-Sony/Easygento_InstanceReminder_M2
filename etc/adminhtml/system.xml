@@ -14,9 +14,16 @@
         <resource>Easygento_InstanceReminder::instancereminder</resource>
         <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
             <label>General</label>
-            <field id="enabled" type="select" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <field id="enabled" type="select" translate="label" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>Enabled</label>
                 <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+            </field>
+            <field id="display_admin_login" type="select" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Enabled on Admin Login</label>
+                <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                <depends>
+                    <field id="enabled">1</field>
+                </depends>
             </field>
             <field id="instance_type" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>Instance</label>
