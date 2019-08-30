@@ -1,4 +1,4 @@
-#Instance Reminder by Easygento for Magento 2
+# Instance Reminder by Easygento for Magento 2
 
 Sometimes you have to work on multiple instance on multiple tab on your browser. 
 This module prevent you to mix up by mistake your instances.
