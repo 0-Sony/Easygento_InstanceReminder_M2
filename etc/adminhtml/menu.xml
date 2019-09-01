@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @license MIT. Please see the LICENSE file for more info.
+ * @author Phuong LE <sony@menincode.com>
+ * @copyright Copyright (c) 2019 Men In Code Ltd (http://www.menincode.com)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Easygento_InstanceReminder::instancereminder" title="Instance Reminder" module="Easygento_InstanceReminder" sortOrder="5" resource="Easygento_InstanceReminder::instancereminder"
+             parent="Easygento_Core::menu"/>
+        <add id="Easygento_InstanceReminder::instancereminder_settings" title="Configuration" module="Easygento_InstanceReminder" sortOrder="10" resource="Easygento_InstanceReminder::instancereminder_settings"
+             parent="Easygento_InstanceReminder::instancereminder" action="adminhtml/system_config/edit/section/easygento_instancereminder"/>
+    </menu>
+</config>
