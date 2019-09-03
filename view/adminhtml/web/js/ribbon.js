@@ -7,14 +7,13 @@ define([
         return Component.extend({
 
             /** @inheritdoc */
-            initialize: function (config) {
+            initialize: function (config, element) {
                 this._super();
-                let ribbon = document.getElementById("easygento_ribbon");
                 $(document).on('scroll', function (){
-                    if (window.pageYOffset > ribbon.offsetHeight) {
-                        ribbon.classList.add("_fixed");
+                    if (window.pageYOffset > $(element).outerHeight()) {
+                        $(element).addClass("_fixed");
                     } else {
-                        ribbon.classList.remove("_fixed");
+                        $(element).removeClass("_fixed");
                     }
                 });
             }
