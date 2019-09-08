@@ -19,6 +19,7 @@ class Config extends AbstractHelper
     const XML_PATH_EASYGENTO_INSTANCEREMINDER_GENERAL_PREPROD = 'easygento_instancereminder/general/preprod';
     const XML_PATH_EASYGENTO_INSTANCEREMINDER_GENERAL_PRODUCTION = 'easygento_instancereminder/general/production';
     const XML_PATH_EASYGENTO_INSTANCEREMINDER_GENERAL_CUSTOM = 'easygento_instancereminder/general/custom';
+    const XML_PATH_EASYGENTO_INSTANCEREMINDER_GENERAL_LABEL_COLOR = 'easygento_instancereminder/general/label_color';
 
     /**
      * @return boolean
@@ -62,5 +63,13 @@ class Config extends AbstractHelper
     {
         $instance = $this->getInstance();
         return '#' . $this->scopeConfig->getValue(constant('self::XML_PATH_EASYGENTO_INSTANCEREMINDER_GENERAL_' . strtoupper($instance)));
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLabelColor()
+    {
+        return '#' . $this->scopeConfig->getValue(self::XML_PATH_EASYGENTO_INSTANCEREMINDER_GENERAL_LABEL_COLOR);
     }
 }

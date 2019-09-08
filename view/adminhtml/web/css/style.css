@@ -17,14 +17,12 @@
     z-index: 600;
 }
 #easygento_ribbon span {
-    color : #FFFFFF;
-    mix-blend-mode: difference;
+    color : #ffffff;
 }
 
 #easygento_ribbon._fixed span {
     margin-left: -145px;
-    color: #FFFFFF;
-    mix-blend-mode: exclusion;
+    color: #ffffff;
     line-height: 1;
     display: block;
     padding-top: 1px;

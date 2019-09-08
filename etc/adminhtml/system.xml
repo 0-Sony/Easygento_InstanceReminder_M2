@@ -63,11 +63,18 @@
                 </depends>
                 <frontend_model>\Easygento\InstanceReminder\Block\ColorPicker</frontend_model>
             </field>
-            <field id="custom" translate="label" type="text" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+            <field id="custom" translate="label" type="text" sortOrder="70" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>Custom</label>
                 <depends>
                     <field id="enabled">1</field>
                     <field id="instance_type">custom</field>
+                </depends>
+                <frontend_model>\Easygento\InstanceReminder\Block\ColorPicker</frontend_model>
+            </field>
+            <field id="label_color" translate="label" type="text" sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Label Color</label>
+                <depends>
+                    <field id="enabled">1</field>
                 </depends>
                 <frontend_model>\Easygento\InstanceReminder\Block\ColorPicker</frontend_model>
             </field>

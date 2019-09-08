@@ -14,7 +14,7 @@ $helper = $this->helper('\Easygento\InstanceReminder\Helper\Config')
 <?php if ($helper->isEnabled()) : ?>
     <div id="easygento_ribbon" style="background-color: <?php echo $helper->getColorByInstance() ?>">
         <div class="logo">
-            <span><?php echo $helper->getInstanceName() ?></span>
+            <span style="color: <?php echo $helper->getLabelColor() ?> "><?php echo $helper->getInstanceName() ?></span>
         </div>
     </div>
 
