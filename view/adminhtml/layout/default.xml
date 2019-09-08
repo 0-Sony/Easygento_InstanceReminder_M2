@@ -3,7 +3,7 @@
         <css src="Easygento_InstanceReminder::css/style.css"/>
     </head>
     <body>
-        <referenceContainer name="global.notices">
+        <referenceContainer name="notification.window">
             <block name="easygento.instancereminder" template="Easygento_InstanceReminder::ribbon.phtml"/>
         </referenceContainer>
     </body>
