@@ -32,7 +32,12 @@ Once the module installed , run the command
 ![alt text](https://raw.githubusercontent.com/0-Sony/Easygento_InstanceReminder_M2/master/view/adminhtml/web/images/examples/demo-login.png "Login page")
 
 
-![alt text](https://raw.githubusercontent.com/0-Sony/Easygento_InstanceReminder_M2/master/view/adminhtml/web/images/examples/demo-product.png "Products page")
+![alt text](https://raw.githubusercontent.com/0-Sony/Easygento_InstanceReminder_M2/master/view/adminhtml/web/images/examples/demo-login2.png "Login page")
+
+
+![alt text](https://raw.githubusercontent.com/0-Sony/Easygento_InstanceReminder_M2/master/view/adminhtml/web/images/examples/demo-products.png "Products page")
+
+![alt text](https://raw.githubusercontent.com/0-Sony/Easygento_InstanceReminder_M2/master/view/adminhtml/web/images/examples/demo-products2.png "Products page")
 
 
 ![alt text](https://raw.githubusercontent.com/0-Sony/Easygento_InstanceReminder_M2/master/view/adminhtml/web/images/examples/demo-settings.png "Settings page")
