@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <!--
 /**
- * @license MIT. Please see the LICENSE file for more info.
- * @author Phuong LE <sony@menincode.com>
- * @copyright Copyright (c) 2019 Men In Code Ltd (http://www.menincode.com)
+ * Easygento
+ * @author Phuong LE <web.phuong.le@gmail.com>
+ * @license Open Source License
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">

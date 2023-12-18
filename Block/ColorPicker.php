@@ -1,8 +1,11 @@
 <?php
+
+declare(strict_types=1);
+
 /**
- * @license MIT. Please see the LICENSE file for more info.
- * @author Phuong LE <sony@menincode.com>
- * @copyright Copyright (c) 2019 Men In Code Ltd (http://www.menincode.com)
+ * Easygento
+ * @author Phuong LE <web.phuong.le@gmail.com>
+ * @license Open Source License
  */
 namespace Easygento\InstanceReminder\Block;
 
@@ -20,27 +23,21 @@ class ColorPicker extends Field
     {
         $html = $element->getElementHtml();
         $value = $element->getData('value');
-
         $html .= '<script type="text/javascript">
-            require(["jquery"], function ($) {
-                $(document).ready(function (e) {
-                    $("#' . $element->getHtmlId() . '").css("background-color","#' . $value . '");
-                    $("#' . $element->getHtmlId() . '").colpick({
-                        layout:"hex",
-                        submit:0,
-                        colorScheme:"dark",
-                        color: "#' . $value . '",
-                        onChange:function(hsb,hex,rgb,el,bySetColor) {
-                        $(el).css("background-color","#"+hex);
-                        if(!bySetColor) $(el).val(hex);
-                    }
-                    }).keyup(function(){
-                        $(this).colpickSetColor(this.value);
+            require(["jquery","jquery/colorpicker/js/colorpicker"], function ($) {
+                $(document).ready(function () {
+                    var thisElement = $("#' . $element->getHtmlId() . '");
+                    thisElement.css("backgroundColor", "'. $value .'");
+                    thisElement.ColorPicker({
+                        color: "'. $value .'",
+                        onChange: function (hsb, hex, rgb) {
+                            thisElement.css("backgroundColor", "#" + hex).val("#" + hex);
+                        }
                     });
                 });
             });
             </script>';
-
         return $html;
+
     }
 }
